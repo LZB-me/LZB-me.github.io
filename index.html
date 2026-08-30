@@ -2,21 +2,44 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial‑scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>关于我｜个人主页</title>
 <style>
-body{max-width:750px;margin:40px auto;padding:0 20px;font-family:微软雅黑;line-height:1.7;color:#333;}
-.box{background:#f7f8fa;padding:24px;border-radius:12px;margin:20px 0;}
+/* 整个页面背景 */
+body{
+  max-width:750px;
+  margin:40px auto;
+  padding:0 20px;
+  font-family:微软雅黑;
+  line-height:1.7;
+  color:#333;
+  /* 背景图片 */
+  background-image: url("img/图片.jpg");
+  /* 背景铺满、居中、不重复 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* 背景透明度30%方案：用半透白色底色叠加，图片透出30%效果 */
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+.box{
+  background:rgba(255,255,255,0.85);
+  padding:24px;
+  border-radius:12px;
+  margin:20px 0;
+}
 </style>
 </head>
 <body>
-<h1>你好，我是XXX</h1>
-<!-- 头像 -->
-<img src="img/图片.jpg" alt="头像" width="180">
+<h1>你好，我是一个铠甲爱好者</h1>
 <p>欢迎来到我的个人主页</p>
+
 <!-- 音乐播放器 -->
 <audio controls>
 <source src="music/音乐.mp3" type="audio/mpeg">
+
 
 <div class="box">
 <h3>关于我</h3>
